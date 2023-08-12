@@ -19,7 +19,7 @@ Applications used to manage projects that are being worked on in offices, organi
 I'm a Fullstack Developer and Mobile Developer
 
 ## 🛠 Skills
-**Backend:** PHP, Codeigniter, Laravel, Java, Java Spring, Golang, C++
+**Backend:** PHP, Codeigniter, Laravel, Java, Java Spring, Golang
 
 **Frontend:** HTML, CSS, JavaScript, TypeScript
 
