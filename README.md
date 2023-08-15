@@ -7,10 +7,10 @@ Applications used to manage projects that are being worked on in offices, organi
 ## App Preview
 
 <div>
-  <img src="https://github.com/AdamKandias/e-quran-simple-flutter/app_preview/1.jpg" width="200" height="500" />
-  <img src="https://github.com/AdamKandias/e-quran-simple-flutter/app_preview/2.jpg" width="200" height="500" />
-  <img src="https://github.com/AdamKandias/e-quran-simple-flutter/app_preview/3.jpg" width="200" height="500" />
-  <img src="https://github.com/AdamKandias/e-quran-simple-flutter/app_preview/4.jpg" width="200" height="500" />
+  <img src="https://github.com/AdamKandias/citracker/blob/main/app_preview/1.jpg" width="200" height="500" />
+  <img src="https://github.com/AdamKandias/citracker/blob/main/app_preview/2.jpg" width="200" height="500" />
+  <img src="https://github.com/AdamKandias/citracker/blob/main/app_preview/3.jpg" width="200" height="500" />
+  <img src="https://github.com/AdamKandias/citracker/blob/main/app_preview/4.jpg" width="200" height="500" />
 </div>
 
 
