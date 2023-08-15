@@ -4,7 +4,7 @@ import '../../../views/create_task/create_task.dart';
 import '../../../views/detail_project/detail_project.dart';
 import '../../../views/edit_project/edit_project.dart';
 import '../../../views/register/register.dart';
-import '../../../views/report/pdf_preview_page.dart';
+import '../../../views/pdf_preview/pdf_preview_page.dart';
 import '../../../views/sign_in/sign_in.dart';
 import '../../../views/welcome/welcome.dart';
 

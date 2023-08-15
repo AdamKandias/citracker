@@ -1,7 +1,6 @@
-import 'package:bloc/bloc.dart';
 import 'package:citracker/models/project.dart';
 import 'package:citracker/services/firestore_service.dart';
-import 'package:meta/meta.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 part 'home_event.dart';
 part 'home_state.dart';

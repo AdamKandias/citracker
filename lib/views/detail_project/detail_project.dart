@@ -1,4 +1,5 @@
 import 'package:citracker/core/widgets/dialog/loading_dialog.dart';
+import 'package:citracker/viewmodel/pdf_preview/pdf_preview_bloc.dart';
 import 'package:citracker/viewmodel/project/edit_project/edit_project_event.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -262,12 +263,10 @@ class DetailProject extends StatelessWidget {
                           children: [
                             InkWell(
                               onTap: () {
-                                // Navigator.pushNamed(context, "export_pdf",
-                                //     arguments: <String, String>{
-                                //       'title': data['title'],
-                                //       'description': data['description'],
-                                //       'dueDate': data['due_date'],
-                                //     });
+                                context.read<PdfPreviewBloc>().add(
+                                    PdfPreviewLoadEvent(
+                                        documentId: documentId));
+                                Navigator.pushNamed(context, "export_pdf");
                               },
                               child: CircleAvatar(
                                 backgroundColor: AppColors.primaryElement,

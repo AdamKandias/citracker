@@ -1,5 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../viewmodel/pdf_preview/pdf_preview_bloc.dart';
 import '../../blocs/application/application_bloc.dart';
 import '../../../viewmodel/home/home_bloc.dart';
 import '../../../viewmodel/profile/profile_bloc.dart';
@@ -38,6 +39,9 @@ class AppBlocProvider {
         ),
         BlocProvider(
           create: (context) => DetailProjectBloc(),
+        ),
+        BlocProvider(
+          create: (context) => PdfPreviewBloc(),
         ),
       ];
 }

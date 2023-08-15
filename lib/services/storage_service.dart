@@ -22,14 +22,12 @@ class StorageService {
   }
 
   bool getDeviceFirstTime() {
-    return _preferences
-            .getBool(StorageConstants.STORAGE_DEVICE_OPEN_FIRST_TIME) ??
+    return _preferences.getBool(StorageConstants.storageDeviceOpenFirstTime) ??
         false;
   }
 
   bool getIsLoggedIn() {
-    return _preferences.getString(StorageConstants.STORAGE_USER_TOKEN_KEY) ==
-            null
+    return _preferences.getString(StorageConstants.storageUserTokenKey) == null
         ? false
         : true;
   }

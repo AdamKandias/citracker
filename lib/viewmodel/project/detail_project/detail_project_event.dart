@@ -1,6 +1,5 @@
 part of 'detail_project_bloc.dart';
 
-@immutable
 sealed class DetailProjectEvent {}
 
 class DetailProjectLoadEvent extends DetailProjectEvent {

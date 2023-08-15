@@ -140,8 +140,8 @@ class _WelcomeState extends State<Welcome> {
                   duration: const Duration(milliseconds: 500),
                   curve: Curves.decelerate);
             } else {
-              Global.storageService.setBool(
-                  StorageConstants.STORAGE_DEVICE_OPEN_FIRST_TIME, true);
+              Global.storageService
+                  .setBool(StorageConstants.storageDeviceOpenFirstTime, true);
               Navigator.pushNamedAndRemoveUntil(
                 context,
                 'sign_in',

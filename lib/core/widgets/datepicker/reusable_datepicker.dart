@@ -82,31 +82,28 @@ class _ReusableDatePickerState extends State<ReusableDatePicker> {
               border: Border.all(color: AppColors.primaryFourthElementText)),
           child: SizedBox(
             child: AbsorbPointer(
-              child: Container(
-                child: TextFormField(
-                  controller: controller,
-                  validator: (value) {
-                    if (widget.validator != null) {
-                      return widget.validator!(selectedValue.toString());
-                    }
-                    return null;
-                  },
-                  readOnly: true,
-                  decoration: InputDecoration(
-                    border:
-                        const OutlineInputBorder(borderSide: BorderSide.none),
-                    labelText: widget.label,
-                    labelStyle: const TextStyle(
-                      color: AppColors.primaryText,
-                    ),
-                    prefixIcon: Icon(
-                      Icons.date_range,
-                      size: 16.w,
-                      color: AppColors.primaryText,
-                    ),
-                    helperText: widget.helper,
-                    hintText: widget.hint,
+              child: TextFormField(
+                controller: controller,
+                validator: (value) {
+                  if (widget.validator != null) {
+                    return widget.validator!(selectedValue.toString());
+                  }
+                  return null;
+                },
+                readOnly: true,
+                decoration: InputDecoration(
+                  border: const OutlineInputBorder(borderSide: BorderSide.none),
+                  labelText: widget.label,
+                  labelStyle: const TextStyle(
+                    color: AppColors.primaryText,
                   ),
+                  prefixIcon: Icon(
+                    Icons.date_range,
+                    size: 16.w,
+                    color: AppColors.primaryText,
+                  ),
+                  helperText: widget.helper,
+                  hintText: widget.hint,
                 ),
               ),
             ),

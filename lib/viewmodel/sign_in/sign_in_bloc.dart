@@ -1,5 +1,5 @@
-import 'package:bloc/bloc.dart';
 import 'package:citracker/services/firebase_auth_service.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../core/constants/storage.dart';
 import '../../global.dart';
@@ -48,7 +48,7 @@ class SignInBloc extends Bloc<SignInEvent, SignInState> {
       if (user != null) {
         emit(SignInSuccess(message: "Login Success"));
         Global.storageService
-            .setString(StorageConstants.STORAGE_USER_TOKEN_KEY, user.uid);
+            .setString(StorageConstants.storageUserTokenKey, user.uid);
         return;
       }
       emit(SignInFailed(
@@ -70,7 +70,7 @@ class SignInBloc extends Bloc<SignInEvent, SignInState> {
       if (userCredential != null) {
         emit(GoogleSignInSuccess(message: "Sign in success"));
         Global.storageService.setString(
-            StorageConstants.STORAGE_USER_TOKEN_KEY, userCredential.user!.uid);
+            StorageConstants.storageUserTokenKey, userCredential.user!.uid);
       } else {
         emit(GoogleSignInCancel());
       }

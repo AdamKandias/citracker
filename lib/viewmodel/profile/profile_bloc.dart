@@ -1,6 +1,5 @@
-import 'package:bloc/bloc.dart';
 import 'package:citracker/services/firebase_auth_service.dart';
-import 'package:meta/meta.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../core/constants/storage.dart';
 import '../../global.dart';
@@ -18,8 +17,7 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     emit(LogoutLoading());
     try {
       FirebaseAuthService().logout();
-      await Global.storageService
-          .remove(StorageConstants.STORAGE_USER_TOKEN_KEY);
+      await Global.storageService.remove(StorageConstants.storageUserTokenKey);
       emit(LogoutSuccess());
     } catch (e) {
       emit(LogoutFailed(message: e.toString()));

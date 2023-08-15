@@ -24,7 +24,7 @@
 //           await SignInService(context: context).googleSignIn();
 //       Navigator.pop(context);
 //       Global.storageService.setString(
-//           StorageConstants.STORAGE_USER_TOKEN_KEY, userCredential.user!.uid);
+//           StorageConstants.storageUserTokenKey, userCredential.user!.uid);
 //       Navigator.pushNamedAndRemoveUntil(
 //           context, 'application', (route) => false);
 //       return;
