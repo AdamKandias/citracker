@@ -1,11 +1,12 @@
-import 'package:citracker/common/constants/color.dart';
-import 'package:citracker/common/initial/bloc/app_bloc_provider.dart';
-import 'package:citracker/common/initial/routes/app_routes.dart';
-import 'package:citracker/common/initial/routes/route_setting.dart';
-import 'package:citracker/global.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'core/constants/color.dart';
+import 'core/initial/bloc/app_bloc_provider.dart';
+import 'core/initial/routes/app_routes.dart';
+import 'core/initial/routes/route_setting.dart';
+import 'global.dart';
 
 void main() async {
   await Global.init();
